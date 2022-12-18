@@ -1,0 +1,108 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #9599E2;
+}
+.list{
+    margin: 5px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    font-weight: bold;
+    border-left: solid 3px #8BC6EC ;
+}
+.listtopo{
+    margin: 5px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    font-weight: bold;
+    border-left: solid 3px #8BC6EC ;
+    background-image: linear-gradient(135deg, #ffffff 0%, #ebebeb 100%); 
+}
+.lista{
+    margin-left: 300px;
+}
+.btn{
+    color: white;
+    background-color: rgb(211, 6, 6);
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form{
+    margin-left: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.label{
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    color: #8BC6EC;
+}
+.input{
+    border: none;
+    background-color: #8bc5ec6e;
+    border-bottom: 2px solid #8BC6EC;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 4px;
+}
+.input:focus{
+    box-shadow: 0 0 1em #8BC6EC;
+    border: 1px solid #8BC6EC;
+    outline: 0;
+}
+.btngo{
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #8BC6EC;
+    border-radius: 4px;
+    transition: .10s;
+    color: white;
+}
+.btngo:hover{
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 1px #8BC6EC;
+    transition: .10s;
+    color: #8BC6EC;
+}
+@media only screen and (max-width:  600px){
+    .title{
+        margin-left: 10px;
+       margin-top: 50px;
+    }
+    .form{
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction:column;
+    }
+    .lista{
+        margin-left: 10px;
+    }
+    .list{
+        width: 460px;
+    }
+    .listtopo{
+        width: 460px;
+    }
+}

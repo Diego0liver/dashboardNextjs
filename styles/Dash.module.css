@@ -1,0 +1,196 @@
+.title{
+color: #9599E2;
+margin-left: 80px;
+height: 50px;
+font-weight: bold;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+}
+.total{
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);  
+   height: 100px;
+   width: 280px;
+   padding: 20px;
+   margin: 10px;
+   box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   color: #275472;
+   font-weight: bold;
+   transition: .10s;
+   animation: animate 2s;
+}
+
+.total:hover{
+    transition: .10s;
+    margin-top: -0.9px;
+}
+.entrada{
+   background-image: linear-gradient(135deg, #8becb3 0%, rgb(116, 223, 112) 100%);  
+   height: 100px;
+   width: 280px;
+   padding: 20px;
+   margin: 10px;
+   box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   color: #307227;
+   font-weight: bold;
+   transition: .10s;
+   animation: animate 2s;
+}.entrada:hover{
+    transition: .10s;
+    margin-top: -0.9px;
+}
+.saida{
+    background-image: linear-gradient(135deg, #ec8b8b 0%, #e03333 100%);  
+    height: 100px;
+    width: 280px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: #722727;
+    font-weight: bold;
+    transition: .10s;
+    animation: animate 2s;
+ }
+.saida:hover{
+    transition: .10s;
+    margin-top: -0.9px;
+}
+
+ .img{
+display: flex;
+justify-content: flex-end;
+margin-top: -30px;
+ }
+.topo{
+    margin-top: 70px !important;
+    margin-left: -90px !important;
+    display:flex
+}
+.grafico{
+    margin-top: 200px !important;
+    margin-left: -890px !important;
+    display:flex;
+    
+}
+.circlo{
+   width: 300px;
+   height: 310px;
+   background-image: linear-gradient(135deg, #ffffff 0%, #ebebeb 100%);  
+   margin: 10px;
+   padding: 5px;
+   box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+  
+}
+.bar{
+    width: 500px;
+    height: 310px;
+    background-image: linear-gradient(135deg, #ffffff 0%, #ebebeb 100%); 
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+   
+}
+.datas{
+    margin-top: 550px !important;
+    margin-left: -890px !important;
+    display:flex;
+}
+.calendario{
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+    height: 340px;
+    animation: animate 2s;
+}
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 1px dotted #8BC6EC;
+}
+.tabela{
+    background-image: linear-gradient(135deg, #ffffff 0%, #ebebeb 100%); 
+    width: 550px;
+    height: 340px;
+    margin-left: 30px;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-bottom: 30px;
+    overflow-y: scroll;
+    animation: animate 2s;
+}
+.datasCont{
+    background-color: #8BC6EC;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bold;
+}
+.datasBtn{
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+.datasBtn:hover{
+    box-shadow: none   
+}
+@keyframes animate {
+    0% {
+        transform: translateX(-100%)                        
+    }
+  }
+@media only screen and (max-width:  600px){
+    .cont{
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        margin-left: -10px;
+        }
+    .topo{
+        display:flex;
+        flex-direction: column;
+    }
+    .grafico{
+        display:flex;
+        flex-direction: column;
+        margin-top: 50px !important;
+    }
+    .circlo{
+        margin-left: 800px;
+     }
+     .bar{
+        margin-left: 700px;
+        width: 450px;
+     }
+     .datas{
+        margin-top: 30px !important;
+        display:flex;
+        flex-direction: column;
+    }
+    .tabela{
+        margin-top: 30px;
+        margin-left: 700px;
+        margin-bottom: 30px;
+        width: 450px;
+    }
+    .calendario{
+        margin-left: 700px;
+        box-shadow:none;
+    }
+  }

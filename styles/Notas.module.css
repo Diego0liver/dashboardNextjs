@@ -1,0 +1,111 @@
+.cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+}
+.title{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #9599E2;
+    margin-left: 300px;
+}
+.padAdd{
+    margin: 20px;
+    width: 180px !important;
+    height: 180px !important;
+    resize: none;
+    border: none;
+    background-color: #b1ddfa;
+    overflow-y: scroll;
+}
+.padAdd::-webkit-scrollbar{
+    background-color: #b1ddfa;
+    width: 6px;
+}
+.padAdd::-webkit-scrollbar-thumb{
+    background-color: #76a3c2;
+    border-radius: 5px;
+}
+.padAdd:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;   
+}
+.contpadadd{
+    background-color: #b1ddfa;
+    margin-top: 60px;
+    border-radius: 10px;
+    margin-left: -130px;
+}
+.padNew{
+    padding: 2px;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #8cb4cf
+}
+.pad{
+    display: flex;
+    flex-wrap:wrap ;
+}
+.pad li{
+    list-style: none;
+}
+.padItem{
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px !important;
+    height: 200px !important;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+   
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.exclui{
+     background-color: rgb(250, 211, 163);
+    border-radius: 5px;
+    width: 20px !important;
+    height: 20px !important;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(126, 100, 68);
+    border: none;
+}
+.exclui:hover{
+    box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.textPad{
+    height: 150px !important;
+    overflow-y: scroll;
+    font-weight: bold;
+}
+.textPad::-webkit-scrollbar{
+    background-color: bisque;
+    width: 6px;
+}
+.textPad::-webkit-scrollbar-thumb{
+    background-color: rgb(248, 217, 179);
+    border-radius: 5px;
+}
+@media only screen and (max-width:  600px){
+    .title{
+        margin-top: 50px;
+        margin-left: 8px;
+    }
+    .contpadadd{ 
+       margin-top: 100px;
+    }
+    
+
+}

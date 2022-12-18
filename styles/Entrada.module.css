@@ -1,0 +1,106 @@
+
+.cont{
+    display: flex;
+    flex-direction:column;
+}
+.title{
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #9599E2;
+}
+.inputs{
+    margin-left: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.lista{
+    margin-left: 300px;
+}
+.list{
+    margin: 5px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    font-weight: bold;
+    border-left: solid 3px #9599E2;
+}
+.listtopo{
+    margin: 5px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    font-weight: bold;
+    border-left: solid 3px #9599E2;
+    background-image: linear-gradient(135deg, #ffffff 0%, #ebebeb 100%); 
+}
+.btn{
+    color: white;
+    background-color: rgb(211, 6, 6);
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.label{
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    color: #9599E2;
+}
+.btngo{
+    padding: 3px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #9599E2;
+    border-radius: 4px;
+    transition: .10s;
+    color: white;
+}
+.btngo:hover{
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 1px #9599E2;
+    transition: .10s;
+    color: #9599E2;
+}
+.input{
+    border: none;
+    background-color: #9599e273;
+    border-bottom: 2px solid #9599E2;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 4px;
+}
+.input:focus{
+    box-shadow: 0 0 1em #9599E2;
+    border: 1px solid #9599E2;
+    outline: 0;
+}
+.total{
+    margin-bottom: 20px;
+}
+@media only screen and (max-width:  600px){
+    .title{
+        margin-left: 10px;
+       margin-top: 50px;
+    }
+    .inputs{
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction:column;
+    }
+    .lista{
+        margin-left: 10px;
+    }
+}
