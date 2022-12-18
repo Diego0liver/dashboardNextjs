@@ -31,7 +31,8 @@ export default function Saida() {
       titulo: titulo,
       categoria: categoria,
       valor: valor,
-    }).then(yes())
+    }).then(saidas)
+    yes()
     setTitulo("")
     setValor("")
    

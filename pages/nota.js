@@ -27,7 +27,8 @@ export default function Nota() {
       id: uuId,
       texto: texto,
       datas: dats,
-    }).then(yes())
+    }).then(notas)
+    yes()
     setTexto("")
     notas()
 }else{not()}}

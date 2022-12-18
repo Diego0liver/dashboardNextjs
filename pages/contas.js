@@ -29,7 +29,8 @@ export default function Contas() {
           titulo: titulo,
           valor: valor,
           vencimento: vencimentos
-        }).then(yes())
+        }).then(contas)
+        yes()
         setTitulo("")
         setValor("")
         setVencimento('')

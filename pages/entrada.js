@@ -27,10 +27,11 @@ export default function Entrada() {
       id: uuId,
       titulo: titulo,
       valor: valor,
-    }).then(yes())
+    }).then(entradas)
+    yes()
     setTitulo("")
     setValor("")
-    entradas()
+    
 }else{not()}}
 
 const deleta = async (id)=> {
