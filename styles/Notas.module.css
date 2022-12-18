@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap:wrap ;
+    margin-left: 300px;
 }
 .title{
     margin-top: 10px;
     margin-bottom: 20px;
     color: #9599E2;
-    margin-left: 300px;
 }
 .padAdd{
     margin: 20px;
@@ -32,6 +32,8 @@
 }
 .contpadadd{
     background-color: #b1ddfa;
+    width: 270px !important;
+    height: 240px !important;
     margin-top: 60px;
     border-radius: 10px;
     margin-left: -130px;
@@ -44,8 +46,6 @@
     text-align: center;
     box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
     border: none;
-    margin-bottom: 10px;
-    margin-right: 10px;
     font-size: 20px;
     color: #8cb4cf
 }
@@ -65,7 +65,6 @@
     margin-top: 60px;
     margin-left: 30px;
     margin-bottom: 20px;
-   
 }
 .items{
     display: flex;
@@ -101,11 +100,17 @@
 @media only screen and (max-width:  600px){
     .title{
         margin-top: 50px;
-        margin-left: 8px;
+        margin-left: -128px;
     }
     .contpadadd{ 
        margin-top: 100px;
+       margin-left: -200px;
     }
-    
+    .pad{
+      margin-left: -150px;
+    }
+    .padItem{
+        margin-top: 10px;
+    }
 
 }

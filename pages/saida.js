@@ -48,7 +48,7 @@ const delet = async (id)=> {
   <div className={styles.cont}>
     <Menu />
     <h1 className={styles.title}>Controle de gastos</h1>
-    <form className={styles.form}>
+    <div className={styles.form}>
       <label className={styles.label}>Titulo</label>
       <input  className={styles.input} type='text' value={titulo} onChange={(e)=> setTitulo (e.target.value)}></input>
       <label className={styles.label} for="categ-select">Categotia</label>
@@ -63,7 +63,7 @@ const delet = async (id)=> {
       <label className={styles.label}>Valor</label>
       <input className={styles.input} type='number' value={valor} onChange={(e)=> setValor (e.target.value)}></input>
       <button className={styles.btngo} onClick={criar}>Salvar</button>
-    </form>
+    </div>
     <div className={styles.topo}>
      <ul className={styles.listtopo}>
       <li>Descricao</li>

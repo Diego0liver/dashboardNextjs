@@ -1,5 +1,6 @@
 import React, { useEffect, useContext, useState } from "react";
 import {v4 as uuid} from 'uuid'
+import { ToastContainer } from 'react-toastify';
 import Head from 'next/head'
 import axios from "axios";
 import styles from '../styles/Notas.module.css'
@@ -9,7 +10,7 @@ import {TotalContext} from '../context'
 const URLNotas = 'http://localhost:3004/notas/'
 
 export default function Nota() {
-  const { todo, notas} = useContext(TotalContext) 
+  const { todo, notas, yes, not} = useContext(TotalContext) 
   useEffect(()=>{
     notas()
   },[]);
@@ -26,10 +27,10 @@ export default function Nota() {
       id: uuId,
       texto: texto,
       datas: dats,
-    }).then(alert('yes'))
+    }).then(yes())
     setTexto("")
     notas()
-}else{alert('no')}}
+}else{not()}}
 
 const deletNota = async (id)=> {
   await axios.delete(`${URLNotas + id}`)
@@ -62,7 +63,7 @@ const deletNota = async (id)=> {
           )})}
       </div>    
     </div>
-    
+    <ToastContainer />
     </>
   )
 }

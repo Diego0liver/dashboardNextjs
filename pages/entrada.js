@@ -1,10 +1,10 @@
+import React, {useState, useEffect, useContext} from "react";
 import {Menu} from '../components'
 import Head from 'next/head';
 import styles from '../styles/Entrada.module.css'
 import { ToastContainer } from 'react-toastify';
 import axios from "axios";
 import {v4 as uuid} from 'uuid'
-import React, {useState, useEffect, useContext} from "react";
 import {TotalContext} from '../context'
 
 const URL = 'http://localhost:3004/entrada/'
@@ -30,7 +30,7 @@ export default function Entrada() {
     }).then(yes())
     setTitulo("")
     setValor("")
-   
+    entradas()
 }else{not()}}
 
 const deleta = async (id)=> {
@@ -43,13 +43,13 @@ const deleta = async (id)=> {
   <div className={styles.cont}>
     <Menu />
     <h1 className={styles.title}>Controle de entradas</h1>
-    <form className={styles.inputs}>
+    <div className={styles.inputs}>
     <label className={styles.label}>Titulo</label>
     <input className={styles.input} type="text" value={titulo} onChange={(e)=> setTitulo (e.target.value)}></input>
     <label className={styles.label}>Valor</label>
     <input className={styles.input} type="number" value={valor} onChange={(e)=> setValor (e.target.value)}></input>
-    <button className={styles.btngo} onClick={cria}>Salvar</button>
-    </form>
+    <button onClick={cria} className={styles.btngo}>Salvar</button>
+    </div>
     <div className={styles.lista}>
       <ul className={styles.listtopo}>
       <li>Descricao</li>
@@ -67,7 +67,7 @@ const deleta = async (id)=> {
         })}
         <h1 className={styles.total}>R${total}</h1>
   </div>
-    <ToastContainer />
     </div>
+    <ToastContainer />
     </>)
 }

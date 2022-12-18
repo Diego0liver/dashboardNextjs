@@ -47,7 +47,7 @@ export default function Contas() {
     <Menu />
     <div className={styles.cont}>
      <h1 className={styles.title}>Controle de contas</h1>
-     <form className={styles.form}>
+     <div className={styles.form}>
       <label className={styles.label}>Titulo</label>
       <input className={styles.input} type='title'
       value={titulo} onChange={(e)=> setTitulo (e.target.value)}
@@ -63,7 +63,7 @@ export default function Contas() {
       <button className={styles.btngo}
        onClick={criarConta}
       >Salvar</button>
-     </form>
+     </div>
      <div className={styles.lista}>
      <ul  className={styles.listtopo}>
       <li>Descricao</li>

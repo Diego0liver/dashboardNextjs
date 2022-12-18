@@ -9,6 +9,12 @@ const URLconta = 'http://localhost:3004/contas/'
 const URLNotas = 'http://localhost:3004/notas/'
 
 function TotalContextProvider({children}){
+
+//alerts
+const yes = () => toast.success("Item adicionado com sucesso");
+const not = () => toast.error("Preencha todos os campo");
+///
+
     const [post, setPost] = useState([])
     const [saida, setSaida] = useState([])
     const [conta, setConta] = useState([])
@@ -87,10 +93,7 @@ const filtro2 = saida.filter((num)=> num.valor).map((numb)=> Number(numb.valor))
 const totalSaida = filtro2.reduce((acc, cur)=> acc + cur, 0).toFixed(2);
 const soma = Math.abs(totalSaida - total).toFixed(2);
 
-//alerts
-const yes = () => toast.success("Item adicionado com sucesso");
-const not = () => toast.error("Preencha todos os campo");
-///
+
 
 
   return(
